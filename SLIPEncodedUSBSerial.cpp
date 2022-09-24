@@ -188,7 +188,8 @@ size_t SLIPEncodedUSBSerial::write(const uint8_t *buffer, size_t size)
 {
     size_t result=0;
     while(size--)
-        result = write(*buffer++); return result;
+        result = write(*buffer++); 
+    return result;
 }
 
 void SLIPEncodedUSBSerial::begin(unsigned long baudrate){
